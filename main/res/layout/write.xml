@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/write_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#080533"
+        android:gravity="center"
+        android:text="글쓰기"
+        android:textColor="#ffffffff"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/select_category"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:drawSelectorOnTop="true" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:stretchColumns="*" >
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="제목"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/content_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:maxLength="20"
+                android:ems="12"
+                android:hint="제목을 입력하세요" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="내용"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"/>
+            <TextView />
+        </TableRow>
+    </TableLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/contents"
+        android:hint="400자내로 입력해주세요."
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:maxLength="400"
+        android:layout_gravity="center"
+        android:gravity="left"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/write_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_toLeftOf="@+id/write_ok"
+            android:background="#080533"
+            android:gravity="center"
+            android:text="취소"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp" />
+
+        <Button
+            android:id="@+id/write_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:background="#080533"
+            android:gravity="center"
+            android:text="확인"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+</LinearLayout>

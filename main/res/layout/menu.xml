@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <Button
+            android:id="@+id/menu_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/title_setting"
+            android:gravity="center"
+            android:padding="0sp"
+            android:scaleType="centerCrop"
+            android:text="글로벌 캠퍼스"
+            android:textColor="#ffffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+        // 화면 세로모드 고정 -> manifest.xml
+
+        <TextView
+            android:id="@+id/name_check"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:textColor="@color/lbl_name"
+            android:textSize="18dp" />
+        // text부분은 java code로 - 학생이름(학번) // image로 대체하기 // 테두리 :
+        http://android--code.blogspot.kr/2015/01/amdroid-button-strokeborder-color.html
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:layout_gravity="center_horizontal">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/menu_list"
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    android:layout_column="0"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/menu_list"
+                    android:padding="0sp"
+                    android:scaleType="centerCrop" />
+
+                <ImageButton
+                    android:id="@+id/menu_write"
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    android:layout_column="1"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/menu_write"
+                    android:padding="0sp"
+                    android:scaleType="centerCrop" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/menu_ranking"
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    android:layout_column="0"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/menu_ranking"
+                    android:padding="0sp" />
+
+                <ImageButton
+                    android:id="@+id/menu_alarmcheck"
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    android:layout_column="1"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/menu_alarmcheck"
+                    android:padding="0sp"
+                    android:scaleType="centerCrop" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/menu_gachon"
+                    android:layout_width="130dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_span="2"
+                    android:background="@drawable/menu_gachon"
+                    android:padding="0sp"
+                    android:scaleType="centerCrop" />
+
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="40dp"
+        android:background="#080533"
+        android:text="로그아웃"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+</FrameLayout>

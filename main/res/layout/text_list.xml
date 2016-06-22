@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wangki.gachonhelper.activity.TextListActivity"
+    >
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#080533"
+        android:gravity="center"
+        android:padding="0sp"
+        android:text="카테고리"
+        android:textColor="#ffffffff"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/mylistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/category"/>
+
+</RelativeLayout>

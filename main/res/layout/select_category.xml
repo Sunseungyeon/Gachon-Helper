@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#080533"
+        android:gravity="center"
+        android:padding="0sp"
+        android:text="카테고리 선택"
+        android:textColor="#ffffffff"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:stretchColumns="*">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/it"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/it"
+                    android:scaleType="centerCrop"/>
+
+                <ImageButton
+                    android:id="@+id/engineer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/engineer"
+                    android:scaleType="centerCrop"/>
+
+                <ImageButton
+                    android:id="@+id/management"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/management"
+                    android:scaleType="centerCrop"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/socialScience"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/social_science"
+                    android:scaleType="centerCrop"/>
+
+                <ImageButton
+                    android:id="@+id/law"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/law"
+                    android:scaleType="centerCrop" />
+
+                <ImageButton
+                    android:id="@+id/humanities"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/humanities"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/bio"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bio"
+                    android:scaleType="centerCrop"/>
+
+                <ImageButton
+                    android:id="@+id/oriental_medicine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/oriental_medicine"
+                    android:scaleType="centerCrop"/>
+                <ImageButton
+                    android:id="@+id/art"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/art"
+                    android:scaleType="centerCrop" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/liberal_arts"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/liberal"
+                    android:scaleType="centerCrop" />
+
+                <ImageButton
+                    android:id="@+id/other"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/other"
+                    android:scaleType="centerCrop"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

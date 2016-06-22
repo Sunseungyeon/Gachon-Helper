@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="환경설정"
+        android:gravity="center"
+        android:background="#080533"
+        android:textColor="#ffffffff"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:padding="0sp"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="개인 정보"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center_vertical"
+                />
+
+            <Button
+                android:id="@+id/change_info_set"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:text="변경"
+                android:textSize="15dp"
+                android:textColor="#ffffffff"
+                android:textStyle="bold"
+                android:background="#080533"
+                android:layout_marginRight="15dp"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/stu_num_set"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/stu_num_set"
+        android:background="@drawable/border"
+        android:textSize="15dp"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        />
+    <Spinner
+        android:id="@+id/set_category"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/border"
+        android:paddingTop="1dp"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="center_vertical"
+        android:drawSelectorOnTop="true" />
+    <TextView
+        android:id="@+id/ticket_num_set"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/ticket_num_set"
+        android:background="@drawable/border"
+        android:paddingTop="1dp"
+        android:textSize="15dp"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="알림 설정"
+        android:textSize="20dp"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/border"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="알림 수신"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:paddingLeft="5dp"
+                android:gravity="center_vertical"
+                />
+
+            <Switch
+                android:id="@+id/alarm_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="버전 정보"
+        android:textSize="20dp"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/version_set"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/version"
+        android:background="@drawable/border"
+        android:textSize="15dp"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        />
+</LinearLayout>

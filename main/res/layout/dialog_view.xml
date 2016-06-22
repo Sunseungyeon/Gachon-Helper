@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:id = "@+id/helper_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="helper_id"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        />
+    <TextView
+        android:id = "@+id/helper_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="helper_name"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_toRightOf="@id/helper_name"
+        />
+    <TextView
+        android:id = "@+id/helper_tickets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="helper_name"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_toRightOf="@id/helper_category"
+        />
+
+
+</RelativeLayout>
